@@ -12,13 +12,11 @@ function TodoPage() {
       const data = await TodoController.findAll()
       setTodos(data)
     }
-
     fetchTodos()
   }, [])
 
   if(todos.length == 0) {
    return <Text>Carregando...</Text>
-
   }
 
   return (
@@ -27,10 +25,3 @@ function TodoPage() {
 }
 
 export default TodoPage
-
-/*
-atomo -> ex.: label/textField 
-molecula -> ex.: algo que compoe um label junto com um text field
-organismo -> ex.: compoe várias moleculas/atomos
-template -> ex.: compoe vários organismos/moleculas/atomos
-*/

@@ -16,8 +16,6 @@ class Repository {
   async deleteOne() {
     
   }
-
-
 }
 
 export default Repository

@@ -20,7 +20,6 @@ class Controller {
   async deleteOne() {
     this.repository.deleteOne()
   }
-
 }
 
 export default Controller
